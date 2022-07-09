@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+body{
+  background: url(./img/About_background.svg) center center/cover no-repeat;
+}
 /* Navbar */
 .navbar {
   display: flex;
@@ -12,6 +14,11 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 15px;
+  background: rgba(5, 124, 98, 0.986);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
 }
 .navbar a {
   text-decoration: none;
@@ -45,16 +52,9 @@
 
 .service_container {
   width: 100%;
-  height: 100vh;
-  background: url(./img/services\ background.svg) center center/cover no-repeat;
+  padding: 50px;
 }
 
-/* Service Head */
-.services{
-  color: #fff;
-  text-align: center;
-  margin-top: 40px;
-}
 
 /* Service Box Container */
 .service_box_container{
@@ -102,14 +102,7 @@
 
 .project_container{
   width: 100%;
-  height: 100vh;
-  background: url(./img/projects_background.svg) center center/cover no-repeat;
-}
-
-.projects{
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 15px;
+  padding: 50px;
 }
 .project_box_container{
   display: flex;
@@ -118,7 +111,7 @@
 .project_box{ 
   width: 300px;
   height: 350px;
-  background: url(./img/projects_box_background.svg) center center/cover no-repeat;
+  background: url(./img/About_background.svg) center center/cover no-repeat;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -128,7 +121,6 @@
   gap: 15px;
   cursor: pointer;
   transition: ease-in-out .5s;
-  margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .project_box:hover{
@@ -152,13 +144,60 @@
 }
 
 .project_box .link{
-  background: #68E1FD;
+  background: #fff;
   width: 100px;
   padding: 5px;
   border-radius: 15px;
   letter-spacing: .2em;
+  transition: ease-in-out .5s;
 }
 .project_box .link:hover{
-  background: #048a78;
-  color: #f8fbfc;
+  color: #fff;
+  background: #000;
+  transition: ease-in-out .5s;
+}
+
+/* About */
+
+.about_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 50px;
+}
+.about_container img{
+  width: 350px;
+  height: 450px;
+}
+
+.about_container .bio{
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #fff;
+  font-family: cursive;
+}
+.download_btn{
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  border-radius: 50px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  align-self: center;
+  margin-top: 50px;
+  font-size: 20px;
+  transition: ease-in-out 1s;
+}
+.download_btn:hover{
+  color: #fff;
+  background: #000;
+  transition: ease-in-out 1s;
 }
