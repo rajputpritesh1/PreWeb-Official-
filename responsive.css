@@ -1,0 +1,56 @@
+/* Navbar responsive */
+@media screen and (max-width: 600px) {
+  .menu{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .list{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: url(./img/services\ background.svg) no-repeat;
+    border-radius: 15px;
+  }
+  .navbar label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+  }#toggler:checked ~ .menu{
+    max-height: 100%;
+  }
+
+/* Service box container responsive */
+.service_container, .project_container{
+  width: 100%;
+  height: auto;
+}
+.service_box_container, .project_box_container{
+  gap: 25px;
+  align-items: center;
+ flex-direction: column;
+ padding: 25px;
+}
+.service_box:hover, .project_box:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

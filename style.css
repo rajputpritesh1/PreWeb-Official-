@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+.navbar a:hover{
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  transition: ease-in-out .5s;
+}
+.logo {
+  margin-right: 50px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+}
+.list {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+#toggler, .navbar label{
+  display: none;
+}
+
+/* Service Page */
+
+.service_container {
+  width: 100%;
+  height: 100vh;
+  background: url(./img/services\ background.svg) center center/cover no-repeat;
+}
+
+/* Service Head */
+.services{
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Service Box Container */
+.service_box_container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 45px;
+}
+.service_box{
+  width: 300px;
+  height: 350px;
+  background: url(./img/services\ box\ background.svg);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: ease-in-out .5s;
+}
+.service_box:hover{
+  transform: scale(1.2);
+  transition: ease-in-out .5s;
+}
+/* Service Box images */
+.service_box img{
+  width: 100px;
+  height: 100px;
+}
+
+.service_box .title{
+  color: #fff;
+  font-weight: bold;
+}
+
+.service_box .detail{
+  color: rgba(255, 255, 255, 0.637);
+  margin: 10px;
+}
+
+
+/* Projects */
+
+.project_container{
+  width: 100%;
+  height: 100vh;
+  background: url(./img/projects_background.svg) center center/cover no-repeat;
+}
+
+.projects{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+}
+.project_box_container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.project_box{ 
+  width: 300px;
+  height: 350px;
+  background: url(./img/projects_box_background.svg) center center/cover no-repeat;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: ease-in-out .5s;
+  margin-top: 50px;
+}
+.project_box:hover{
+  transform: scale(1.2);
+  transition: ease-in-out .5s;
+}
+/* Service Box images */
+.project_box img{
+  width: 100px;
+  height: 100px;
+}
+
+.project_box .title{
+  color: #fff;
+  font-weight: bold;
+}
+
+.project_box .detail{
+  color: rgba(255, 255, 255, 0.637);
+  margin: 10px;
+}
