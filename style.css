@@ -75,9 +75,10 @@
   gap: 15px;
   cursor: pointer;
   transition: ease-in-out .5s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .service_box:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: ease-in-out .5s;
 }
 /* Service Box images */
@@ -128,9 +129,10 @@
   cursor: pointer;
   transition: ease-in-out .5s;
   margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .project_box:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: ease-in-out .5s;
 }
 /* Service Box images */
@@ -147,4 +149,16 @@
 .project_box .detail{
   color: rgba(255, 255, 255, 0.637);
   margin: 10px;
+}
+
+.project_box .link{
+  background: #68E1FD;
+  width: 100px;
+  padding: 5px;
+  border-radius: 15px;
+  letter-spacing: .2em;
+}
+.project_box .link:hover{
+  background: #048a78;
+  color: #f8fbfc;
 }
