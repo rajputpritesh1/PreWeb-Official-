@@ -15,6 +15,7 @@
 
   <!-- Services -->
     <!-- Navbar -->
+  <div class="main">
     <nav class="navbar">
       <a href="#" class="logo">PreWeb Official</a>
       <input type="checkbox" id="toggler">
@@ -28,8 +29,9 @@
         </ul>
       </div>
     </nav>
-<hr>
-  <div class="service_container">
+  </div>
+
+  <div class="service_container" id="services">
     <!--services box  -->
     <div class="service_box_container">
 
@@ -56,8 +58,8 @@
     </div>
   </div>
   <!-- Projects -->
-  <hr>
-  <div class="project_container">
+
+  <div class="project_container" id="projects">
     <!--Project box  -->
     <div class="project_box_container">
 
@@ -87,16 +89,31 @@
       </div>
     </div>
   </div>
-
-<hr>
   <!-- About page -->
   
-  <div class="about_container">
+  <div class="about_container" id="about">
     <span class="bio">
       Hii, I am Pritesh a Front-End Web-Developer From Bihar, India. I Also a UI / UX Designer.
       I Love Desinging & Coding. <br>
       <a class="download_btn" href="#" download="Pritesh CV">Download CV</a>
     </span>
     <img src="./img/About Box.svg" alt="About Box icon">
+  </div>
+
+  <div class="contact_container" id="contact">
+    <div class="contact_container_box">
+      <div class="contact">
+        <span><i class="fa-solid fa-location-dot"></i> Motihari, East Champaran,Bihar 845416</span>
+        <span><i class="fa-solid fa-paper-plane"></i> prewebofficial@gmail.com</span>
+        <span><i class="fa-solid fa-phone"></i> +91 85446 85939</span>
+      </div>
+      <form class="messege">
+        <input class="msg_box" type="text" placeholder="Your Name">
+        <input class="msg_box" type="email" placeholder="Your Email" required>
+        <input class="msg_box2" type="text" placeholder="Your Messege">
+        <input class="btn" type="button" value="Send">
+      </form>
+    </div>
+  </div>
 </body>
 </html>

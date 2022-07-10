@@ -1,3 +1,11 @@
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
 /* Navbar responsive */
 @media screen and (max-width: 600px) {
   .menu{
@@ -12,12 +20,15 @@
     background: url(./img/services\ background.svg) no-repeat;
     border-radius: 15px;
   }
+  
   .navbar label{
     display: inline-flex;
     align-items: center;
     cursor: pointer;
     color: #fff;
-  }#toggler:checked ~ .menu{
+  }
+  
+  #toggler:checked ~ .menu{
     max-height: 100%;
   }
 
@@ -56,6 +67,15 @@
   margin-top: 25px;
 }
 
+
+.contact_container_box{
+  flex-direction: column;
+  background: none;
+}
+
+.contact{
+  width: 100%;
+}
 
 
 
